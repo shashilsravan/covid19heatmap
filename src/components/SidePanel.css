@@ -1,0 +1,143 @@
+.sidebar {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.98);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  top: 1.8vh;
+  width: 28%;
+  height: 90vh;
+  z-index: 2;
+  padding: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.sidebar.hide {
+  display: none;
+}
+.open-icon {
+  position: fixed;
+  top: 2%;
+  left: 2%;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.close-icon {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  background: white;
+  cursor: pointer;
+}
+
+.top-sidebar {
+  height: 59%;
+  border: 2px solid #aaa;
+  overflow-y: auto;
+}
+.top-sidebar h4 {
+  margin: 0;
+  margin-top: 14px;
+  text-transform: uppercase;
+  color: #3a50d9;
+  font-style: italic;
+  text-shadow: -3px 3px 0 #ddd, -14px 7px 0 white;
+}
+.top-sidebar .displayArea {
+  margin: 12px;
+  margin-top: 44px;
+  width: 92%;
+  height: auto;
+  border: 1px solid black;
+  position: relative;
+}
+.top-sidebar .displayArea .buttons {
+  position: absolute;
+  left: -1px;
+  top: -28px;
+}
+.dataTable td {
+  width: 100%;
+  font-style: italic;
+  padding: 6px 10px;
+  font-size: 0.7rem;
+  border-bottom: 1px solid #ccc;
+}
+.dataTable {
+  padding-bottom: 16px;
+}
+.top-sidebar .displayArea .buttons button {
+  padding: 4px 8px;
+  font-size: 0.6rem;
+  font-style: italic;
+  text-transform: uppercase;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.bottom-sidebar {
+  margin: 0;
+  margin-top: 3%;
+  height: 39%;
+  border: 2px solid #aaa;
+}
+.bottom-sidebar .top-area {
+  height: 44%;
+  overflow-y: auto;
+  padding-bottom: 6px;
+}
+.countrySelect {
+  margin-top: 8px;
+  width: 96%;
+  padding: 2px;
+  background-color: #eee;
+}
+.dates {
+  margin-top: 4px;
+}
+.btn {
+  margin-top: 6px;
+  font-size: 0.6rem;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 94%;
+  padding: 6px;
+  background: #fcad5f;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid #fcad5f;
+  background: white;
+}
+.bottom-sidebar .bottom-area {
+  height: auto;
+  margin: 4px;
+  border: 1.5px solid #ccc;
+}
+.imge {
+  height: 20px;
+  padding-right: 8px;
+}
+.alert {
+  font-size: 0.7rem;
+  color: red;
+  text-transform: uppercase;
+  animation: blink;
+  animation-duration: 2s;
+  animation-iteration-count: 4;
+}
+.dataTable2 td {
+  text-align: left;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sidebar {
+    top: 1.1vh;
+    width: 80%;
+  }
+}

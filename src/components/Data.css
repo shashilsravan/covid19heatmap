@@ -1,0 +1,30 @@
+.fa-virus {
+  position: absolute;
+  top: 40%;
+  left: 37%;
+  animation: sravan 4s infinite forwards;
+}
+
+@keyframes sravan {
+  0% {
+    color: red;
+    transform: rotate(0deg);
+    font-size: 5rem;
+  }
+  49% {
+    font-size: 4rem;
+    color: burlywood;
+    transform: rotate(180deg);
+  }
+  100% {
+    font-size: 5rem;
+    color: brown;
+    transform: rotate(359deg);
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .fa-virus {
+    left: 43%;
+  }
+}

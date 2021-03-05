@@ -1,0 +1,29 @@
+html {
+  font-family: system-ui, sans-serif;
+  font-size: 1.25rem;
+  background: rgba(254, 175, 88, 0.4);
+  /* background: url("https://media2.giphy.com/media/AtK6cr1n21uY8/giphy.gif");
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+body {
+  margin: 0;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  html {
+    background-size: 100vw 100vh;
+  }
+}
