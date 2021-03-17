@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react'
-import CasesSlider from './CasesSlider'
+import Arena from '../fragments/Arena'
+import Global from '../fragments/Global'
+import SidePanelBottom from '../fragments/SidePanelBottom'
+import DateInput from '../minicomponents/DateInput'
 import './SidePanel.css'
 import { getGlobalData, getCountriesData } from './SidePanelData'
-import ReactTooltip from 'react-tooltip';
-
 
 export default function SidePanel() {
     const [closedState, setClosedState] = useState(false)
@@ -22,28 +23,16 @@ export default function SidePanel() {
         getCountriesData().then(data => setCountry(data))
     }, [])
 
-    function closePanel(){
-        document.querySelector('.sidebar').classList.add('hide')
-        setClosedState(true)
-    }
-    function openPanel(){
-        document.querySelector('.sidebar').classList.remove('hide')
-        setClosedState(false)
-    }
+    function closePanel(){ setClosedState(true) }
+    function openPanel(){ setClosedState(false) }
 
-    function handleGlobal(){
-        setArena("global")
-    }
-
-    function handleCountry(){
-        setArena("country")
-    }
+    function handleGlobal(){ setArena("global") }
+    function handleCountry(){ setArena("country") }
 
     function countryHandler(e){
         setSelectionCntry(e.target.value)
         setResult(false)
     }
-
     function changeStartDate(e){
         setStartDate(e.target.value)
         setResult(false)
@@ -53,8 +42,7 @@ export default function SidePanel() {
         setEndDate(e.target.value)
         setResult(false)
     }
-
-    function handleClick(e){
+    function handleClick(){
         if (startDate == "" || endDate == ""){
             setAlert("Please select start and end dates!!!")
         }
@@ -69,7 +57,7 @@ export default function SidePanel() {
             {closedState && (<div className="open-icon">
                 <i onClick={openPanel} className="fas fa-caret-square-right"></i>
             </div>)}
-            <div className="sidebar">
+            <div className={closedState ? "sidebar hide" : "sidebar"}>
                 <div className="close-icon">
                     <i onClick={closePanel} className="fas fa-caret-square-left"></i>
                 </div>
@@ -79,99 +67,13 @@ export default function SidePanel() {
                         <div className="buttons">
                             <button
                             style={arena == 'global' ? {background: "black", color: "white"} : {background: "white", color: "black"}}
-                            onClick={handleGlobal}>
-                                Global
-                            </button>
+                            onClick={handleGlobal}> Global </button>
                             <button 
                             style={arena == 'country' ? {background: "black", color: "white"} : {background: "white", color: "black"}}
                             onClick={handleCountry}>Country</button>
                         </div>
-                    
-                        {arena == 'global' && <div className="text-global">
-                            {global && (
-                                <table className="dataTable dataTable2">
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            Total Cases: 
-                                        </td>
-                                        <td className="count">
-                                            {global.TotalConfirmed}
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            Total Recovered: 
-                                        </td>
-                                        <td className="count">
-                                            {global.TotalRecovered}
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            Total Deaths: 
-                                        </td>
-                                        <td className="count">
-                                            {global.TotalDeaths}
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            New Confirmed: 
-                                        </td>
-                                        <td className="count">
-                                            {global.NewConfirmed}
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            New Recovered: 
-                                        </td>
-                                        <td className="count">
-                                            {global.NewRecovered}
-                                        </td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td>
-                                            New Deaths: 
-                                        </td>
-                                        <td className="count">
-                                            {global.NewDeaths}
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            )}
-                        </div>}
-
-                        {arena == 'country' && <div className="text-country">
-                            {country && (
-                                <table className="dataTable">
-                                    {country.map(cntry => 
-                                        <tbody>
-                                        <tr key={cntry.ID}>
-                                            <td style={{display: "flex", alignItems: "center"}}>
-                                                
-                                                <img className="imge" src={`https://www.countryflags.io/${cntry.CountryCode.toLowerCase()}/flat/64.png`}></img>
-                                                {cntry.Country.length < 12
-                                                ? cntry.Country : `${cntry.Country.substring(0, 11)} ...`}
-                                                
-                                            </td>
-                                            <td>
-                                                {cntry.TotalConfirmed}
-                                            </td>
-                                        </tr>
-                                        </tbody>)}
-                                </table>
-                            )
-
-                            }
-                        </div>}
+                        {arena == 'global' && <Global global={global} />}
+                        {arena == 'country' && <Arena country={country} />}
                     </div>
                 </div>
                 <div className="bottom-sidebar">
@@ -182,35 +84,21 @@ export default function SidePanel() {
                             <option> Select a Country </option>
                             {country && country.map(cntry => 
                                 <option key={cntry.ID} value={cntry.Slug}>
-                                    {cntry.Country}
-                                </option>
+                                    {cntry.Country} </option>
                             )}
                         </select>
                         <div className="dates">
-                            <input type="date" name="startDate"
-                                min="2020-01-01" max={today}
-                                onChange={changeStartDate}
-                                value={startDate} required>
-                            </input>
-                            <input type="date" name="endDate"
-                                min="2020-01-01" max={today}
-                                onChange={changeEndDate}
-                                value={endDate}>
-                            </input>
+                            <DateInput today={today} startDate={startDate} value={startDate}
+                                change={changeStartDate} name="startDate" />
+                            <DateInput today={today} startDate={startDate} value={endDate}
+                                change={changeEndDate} name="endDate" />
                         </div>
                         <button className="btn" onClick={handleClick}>
                             Get Data
                         </button>
-
                     </div>
-                    <div className="bottom-area">
-                        {alert && 
-                        <span className="alert">{alert}</span>
-                        }
-                        {result && 
-                        <CasesSlider country={selectionCntry}
-                        startDate={startDate} endDate={endDate} /> }
-                    </div>
+                    <SidePanelBottom alert={alert} result={result} endDate={endDate} 
+                    country={selectionCntry} startDate={startDate} />
                 </div>
             </div>
         </>

@@ -90,6 +90,8 @@
   background-color: #eee;
 }
 .dates {
+  display: flex;
+  justify-content: center;
   margin-top: 4px;
 }
 .btn {
