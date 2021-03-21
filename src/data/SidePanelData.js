@@ -12,5 +12,10 @@ const getCountriesData = async () => {
     return res
 }
 
-export { getGlobalData, getCountriesData }
+const getRangeCases = async (country, startDate, endDate) => {
+    const tempRes = await axios(`https://api.covid19api.com/country/${country}?from=${startDate}T00:00:00Z&to=${endDate}T00:00:00Z`, );
+    return [tempRes.data]
+}
+
+export { getGlobalData, getCountriesData, getRangeCases }
 

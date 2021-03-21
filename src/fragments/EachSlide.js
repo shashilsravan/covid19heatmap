@@ -1,4 +1,5 @@
 import React from 'react'
+import Title from '../minicomponents/Title'
 
 export default function EachSlide({styling, title, oldCases, cases, newCases}) {
 
@@ -9,7 +10,7 @@ export default function EachSlide({styling, title, oldCases, cases, newCases}) {
 
     return (
         <div style={slideCss} className={styling}>
-            <h4>{title}</h4>
+            <Title text={title} />
             <p>{cases} 
                 {cases > 0 ? (<i className="fas fa-level-up-alt"></i>)
                 : (<i className="fas fa-level-down-alt"></i>) }

@@ -1,6 +1,6 @@
 import React from 'react'
-import CasesSlider from './CasesSlider'
-import Alert from '../minicomponents/Alert'
+import CasesSlider from '../../fragments/CasesSlider'
+import Alert from '../../minicomponents/Alert'
 
 export default function SidePanelBottom({alert, result, country, startDate, endDate}) {
     return (
