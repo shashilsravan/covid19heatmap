@@ -1,5 +1,5 @@
 import React from 'react'
-import Option from '../../minicomponents/Option'
+import Option from '../../../globalComponents/Option'
 
 export default function CntryDropdown({handleChange, countryName, country}) {
     return (

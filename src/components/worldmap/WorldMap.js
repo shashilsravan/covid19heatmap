@@ -5,7 +5,7 @@ import ReactTooltip from 'react-tooltip';
 import { scaleLinear } from "d3-scale";
 import Slider from 'react-rangeslider'
 import 'react-rangeslider/lib/index.css';
-import { geoUrl, dataProcessing, maximumValue, Dinf } from '../data/dataPreprocessing';
+import { geoUrl, dataProcessing, maximumValue, Dinf } from '../../data/dataPreprocessing';
 
 const geographyStyle = {
     default: {

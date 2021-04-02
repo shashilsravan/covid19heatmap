@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react'
-import SidePanelBottom from './sidepanel/SidePanelBottom'
+import SidePanelBottom from './sidepanel-sections/SidePanelBottom'
 import './SidePanel.css'
-import { getGlobalData, getCountriesData } from '../data/SidePanelData'
-import Title from '../minicomponents/Title'
-import Icon from '../minicomponents/Icon'
-import SidePanelTopDisplay from './sidepanel/SidePanelTopDisplay'
-import CasesFromRange from './sidepanel/CasesFromRange'
+import { getGlobalData, getCountriesData } from './sidepanel-helpers/SidePanelData'
+import Title from '../../globalComponents/Title'
+import Icon from '../../globalComponents/Icon'
+import SidePanelTopDisplay from './sidepanel-sections/SidePanelTopDisplay'
+import CasesFromRange from './sidepanel-helpers/CasesFromRange'
 
 export default function SidePanel() {
     const [closedState, setClosedState] = useState(false)
@@ -30,23 +30,19 @@ export default function SidePanel() {
     function handleCountry(){ setArena("country") }
 
     function handleChange(e){
-        if (e.target.name == "startDate"){
-            setSelection({
-                selectionCntry: selection.selectionCntry,
-                startDate: e.target.value, endDate: selection.endDate
-            })
-        }
-        else if (e.target.name == "country"){
-            setSelection({
-                selectionCntry: e.target.value,
-                startDate: selection.startDate, endDate: selection.endDate
-            })
-        }
-        else{
-            setSelection({
-                selectionCntry: selection.selectionCntry,
-                startDate: selection.startDate, endDate: e.target.value
-            })
+        let value = e.target.value;
+        switch(e.target.name){
+            case "startDate":
+                setSelection({...selection, startDate: value})
+                break;
+
+            case "country":
+                setSelection({...selection, selectionCntry: value})
+                break;
+
+            default:
+                setSelection({...selection, endDate: value})
+                break;
         }
         setResult(false)
     }
@@ -54,10 +50,8 @@ export default function SidePanel() {
     function handleClick(){
         if (selection.startDate == "" || selection.endDate == ""){
             setAlert("Please select start and end dates!!!")
-        }
-        else{
-            setAlert("")
-            setResult(true)
+        } else{
+            setAlert(""); setResult(true)
         }
     }
 

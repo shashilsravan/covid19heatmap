@@ -1,11 +1,10 @@
 import './App.css';
-import Data from './components/Data';
-import WorldMap from './components/WorldMap';
+import Main from './components/Main';
 
 function App() {
   return (
     <div className="App">
-        <Data />
+        <Main />
     </div>
   );
 }

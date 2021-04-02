@@ -1,6 +1,6 @@
 import React from 'react'
-import DateInput from '../../minicomponents/DateInput'
-import Button from '../../minicomponents/Button'
+import DateInput from '../../../globalComponents/DateInput'
+import Button from '../../../globalComponents/Button'
 import CntryDropdown from './CntryDropdown'
 
 export default function CasesFromRange({handleChange, selectionCntry, country, 
@@ -10,10 +10,8 @@ startDate, endDate, handleClick}) {
             <CntryDropdown handleChange={handleChange} countryName={selectionCntry}
                 country={country} />
             <div className="dates">
-                <DateInput startDate={startDate} value={startDate}
-                    change={handleChange} name="startDate" />
-                <DateInput startDate={startDate} value={endDate}
-                    change={handleChange} name="endDate" />
+                <DateInput value={startDate} change={handleChange} name="startDate" />
+                <DateInput value={endDate} change={handleChange} name="endDate" />
             </div>
             <Button text="Get Data" change={handleClick} nameOfClass="btn" />
         </div>

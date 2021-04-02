@@ -1,5 +1,5 @@
 import React from 'react'
-import CountryImage from '../../minicomponents/CountryImage'
+import CountryImage from '../../../globalComponents/CountryImage'
 
 export default function SidePanelArenaDisplay({data}) {
     const tableStyling = {

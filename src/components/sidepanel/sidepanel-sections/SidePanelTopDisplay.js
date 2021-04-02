@@ -1,7 +1,7 @@
 import React from 'react'
-import Arena from '../../fragments/Arena'
-import Global from '../../fragments/Global'
-import Button from '../../minicomponents/Button'
+import Arena from './Arena'
+import Global from './Global'
+import Button from '../../../globalComponents/Button'
 
 export default function SidePanelTopDisplay({arena, handleGlobal, handleCountry, global, country}) {
     return (

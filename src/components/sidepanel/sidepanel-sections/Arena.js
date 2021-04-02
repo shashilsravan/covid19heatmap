@@ -1,5 +1,5 @@
 import React from 'react'
-import SidePanelArenaDisplay from '../components/sidepanel/SidePanelArenaDisplay'
+import SidePanelArenaDisplay from '../sidepanel-helpers/SidePanelArenaDisplay'
 
 export default function Arena({country}) {
     return (

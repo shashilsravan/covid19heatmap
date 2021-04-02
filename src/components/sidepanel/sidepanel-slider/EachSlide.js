@@ -1,5 +1,6 @@
 import React from 'react'
-import Title from '../minicomponents/Title'
+import Icon from '../../../globalComponents/Icon'
+import Title from '../../../globalComponents/Title'
 
 export default function EachSlide({styling, title, oldCases, cases, newCases}) {
 
@@ -12,8 +13,8 @@ export default function EachSlide({styling, title, oldCases, cases, newCases}) {
         <div style={slideCss} className={styling}>
             <Title text={title} />
             <p>{cases} 
-                {cases > 0 ? (<i className="fas fa-level-up-alt"></i>)
-                : (<i className="fas fa-level-down-alt"></i>) }
+                {cases > 0 ? (<Icon iconName="fas fa-level-up-alt" />)
+                : (<Icon iconName="fas fa-level-down-alt" />) }
             </p>
             {`${oldCases} - ${newCases}`}
         </div>

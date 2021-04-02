@@ -1,5 +1,5 @@
 import React from 'react'
-import TableRow from '../minicomponents/TableRow'
+import TableRow from '../../../globalComponents/TableRow'
 
 export default function Global({global}) {
     const { TotalConfirmed, TotalRecovered, TotalDeaths, 

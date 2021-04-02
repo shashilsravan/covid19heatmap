@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './CasesSlider.css'
-import { getRangeCases } from '../data/SidePanelData'
+import { getRangeCases } from '../sidepanel-helpers/SidePanelData'
 import EachSlide from './EachSlide';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
