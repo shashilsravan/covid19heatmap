@@ -1,12 +1,12 @@
 import React from "react"
 import Enzyme, { shallow, mount, render } from "enzyme"
-import EachSlide from "./sidepanel-slider/EachSlide";
-import CasesSlider from "./sidepanel-slider/CasesSlider";
-import CasesFromRange from "./sidepanel-helpers/CasesFromRange";
+import EachSlide from "../components/sidepanel/sidepanel-slider/EachSlide";
+import CasesSlider from "../components/sidepanel/sidepanel-slider/CasesSlider";
+import CasesFromRange from "../components/sidepanel/sidepanel-helpers/CasesFromRange";
 import toJson from 'enzyme-to-json';
-import CntryDropdown from "./sidepanel-helpers/CntryDropdown";
-import SidePanelArenaDisplay from "./sidepanel-helpers/SidePanelArenaDisplay";
-import SidePanelTopDisplay from "./sidepanel-sections/SidePanelTopDisplay";
+import CntryDropdown from "../components/sidepanel/sidepanel-helpers/CntryDropdown";
+import SidePanelArenaDisplay from "../components/sidepanel/sidepanel-helpers/SidePanelArenaDisplay";
+import Arena from "../components/sidepanel/sidepanel-sections/Arena";
 
 const eachSlideData = {
     title: "Sample title",
@@ -31,7 +31,7 @@ describe("Slider of Sidepanel", () => {
     })
 })
 
-describe("", () => {
+describe("sidepanel helpers check", () => {
     it("Cases From Range check", () => {
         shallow(<CasesFromRange />)
     })

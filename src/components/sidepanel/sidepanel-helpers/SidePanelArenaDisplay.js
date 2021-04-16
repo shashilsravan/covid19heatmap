@@ -7,7 +7,7 @@ export default function SidePanelArenaDisplay({data}) {
     }
     const {Country, CountryCode, TotalConfirmed} = data
     return (
-        <tr>
+        <tr key={data.ID}>
             <td style={tableStyling}>
                 <CountryImage CountryCode={CountryCode} />
                 {Country.length < 12 ? Country : `${Country.substring(0, 11)} ...`}
