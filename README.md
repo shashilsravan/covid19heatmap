@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Built With
 
-In the project directory, you can run:
+The application is built with the following libraries/frameworks that you built your project using.
+* [apex-charts](https://apexcharts.com/docs/react-charts/)
+* [d3-scale](https://www.npmjs.com/package/d3-scale)
+* [react-simple-maps](https://www.react-simple-maps.io/)
+* [react-router-dom](https://reactrouter.com/web/guides/quick-start)
 
-### `npm start`
+APIs used
+* [News API](https://newsapi.org/)
+* [Covid19 API](https://documenter.getpostman.com/view/10808728/SzS8rjbc#27454960-ea1c-4b91-a0b6-0468bb4e6712)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You need npm installed on your device to make sure the project is working.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+  
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Get a free API Key at [newsAPI](https://newsapi.org/)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/shashilsravan/covid19heatmap.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API in `config.js`
+   ```JS
+   const API_KEY = 'ENTER YOUR API';
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+or place this api for testing - ``` 34f8ef3527e540efb4e8208012d7da35 ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+<!-- CONTACT -->
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Your Name - [@me](https://twitter.com/shashilSravan45) - shashilsravan.ss.ss@gmail.com
 
-### Making a Progressive Web App
+Project Link: [https://github.com/shashilsravan/covid19heatmap](https://github.com/shashilsravan/covid19heatmap)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[contributors-shield]: https://img.shields.io/github/contributors/shashilsravan/covid19heatmap.svg?style=for-the-badge
+[contributors-url]: https://github.com/shashilsravan/covid19heatmap/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/shashilsravan/covid19heatmap.svg?style=for-the-badge
+[forks-url]: https://github.com/shashilsravan/covid19heatmap/network/members
+[stars-shield]: https://img.shields.io/github/stars/shashilsravan/covid19heatmap.svg?style=for-the-badge
+[stars-url]: https://github.com/shashilsravan/covid19heatmap/stargazers
+[issues-shield]: https://img.shields.io/github/issues/shashilsravan/covid19heatmap.svg?style=for-the-badge
+[issues-url]: https://github.com/shashilsravan/covid19heatmap/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/shashilsravan/covid19heatmap
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/shashil-sravan-a5b201191/
+[product-screenshot]: images/screenshot1.png
