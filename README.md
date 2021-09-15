@@ -4,6 +4,22 @@
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+### Installation
+
+1. Get a free API Key at [bewsAPI](https://newsapi.org/)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/shashilsravan/covid19heatmap.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Enter your API in `config.js`
+   ```JS
+   const API_KEY = 'ENTER YOUR API';
+or place this api for testing - ```sh 34f8ef3527e540efb4e8208012d7da35 ```
+
 
 ## Usage
 
