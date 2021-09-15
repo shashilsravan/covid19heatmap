@@ -25,6 +25,8 @@
 ## First look at the Project
 
 [![Product Name Screen Shot][screenshot1]](https://github.com/shashilsravan/covid19heatmap)
+
+
 This is how the homepage of the covistats looks like. A more detailed info of the routes and UX can be seen in *Detailed Info* Section
 
 
