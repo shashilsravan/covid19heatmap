@@ -73,9 +73,15 @@ or place this api for testing - ``` 34f8ef3527e540efb4e8208012d7da35 ```
 
 
 ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
+* [![Screenshot2][screenshot2]](https://github.com/shashilsravan/covid19heatmap)
+* [![Screenshot3][screenshot3]](https://github.com/shashilsravan/covid19heatmap)
+ AP vs Karnataka new cases visualization over last 25 days
+ * [![Screenshot4][screenshot4]](https://github.com/shashilsravan/covid19heatmap)
+ Delhi vs Goa new cases visualization over last 25 days
+ * [![Screenshot5][screenshot5]](https://github.com/shashilsravan/covid19heatmap)
+ News related to covid19 (row-view)
+ * [![Screenshot6][screenshot6]](https://github.com/shashilsravan/covid19heatmap)
+ News related to covid19 (3 x 3 grid-view)
 
 
 
