@@ -8,7 +8,7 @@
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/shashilSravan45) - shashilsravan.ss.ss@gmail.com
+Your Name - [@me](https://twitter.com/shashilSravan45) - shashilsravan.ss.ss@gmail.com
 
 Project Link: [https://github.com/shashilsravan/covid19heatmap](https://github.com/shashilsravan/covid19heatmap)
 
@@ -17,11 +17,11 @@ Project Link: [https://github.com/shashilsravan/covid19heatmap](https://github.c
 
 [contributors-shield]: https://img.shields.io/github/contributors/shashilsravan/covid19heatmap.svg?style=for-the-badge
 [contributors-url]: https://github.com/shashilsravan/covid19heatmap/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/shashilsravan/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/shashilsravan/covid19heatmap.svg?style=for-the-badge
 [forks-url]: https://github.com/shashilsravan/covid19heatmap/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/shashilsravan/covid19heatmap.svg?style=for-the-badge
+[stars-url]: https://github.com/shashilsravan/covid19heatmap/stargazers
+[issues-shield]: https://img.shields.io/github/issues/shashilsravan/covid19heatmap.svg?style=for-the-badge
 [issues-url]: https://github.com/shashilsravan/covid19heatmap/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/shashilsravan/covid19heatmap
