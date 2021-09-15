@@ -11,7 +11,8 @@ const Dinf = (d) => {
     eachCountry = 'Country - ' + d.Country
     countriesInfo = {
         'Confirmed Cases': d.TotalConfirmed,
-        'Active Cases': d.TotalConfirmed - d.TotalDeaths - d.TotalRecovered + `  (${(((d.TotalConfirmed - d.TotalDeaths - d.TotalRecovered) * 100)/d.TotalConfirmed).toFixed(1)}%)`,
+        // d.TotalConfirmed - d.TotalDeaths - d.TotalRecovered + `  (${(((d.TotalConfirmed - d.TotalDeaths - d.TotalRecovered) * 100)/d.TotalConfirmed).toFixed(1)}%)`,
+        'Active Cases': 'Na',
         'Deceased': d.TotalDeaths + `  (${((d.TotalDeaths * 100)/d.TotalConfirmed).toFixed(1)}%)`,
         'Total Recovered': `${d.TotalRecovered} (${((d.TotalRecovered * 100)/d.TotalConfirmed).toFixed(1)}%)`,
         

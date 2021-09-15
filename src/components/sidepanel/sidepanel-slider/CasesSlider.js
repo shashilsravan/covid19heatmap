@@ -53,8 +53,8 @@ export default function CasesSlider({country, startDate, endDate}) {
                 <EachSlide styling="confirmed" title="Confirmed cases:"
                 cases={confirmed.current} oldCases={confirmed.old} newCases={confirmed.new} />
                 
-                <EachSlide styling="active" title="Active cases:" 
-                cases={active.current} oldCases={active.old} newCases={active.new} />
+                {/* <EachSlide styling="active" title="Active cases:" 
+                cases={active.current} oldCases={active.old} newCases={active.new} /> */}
                 
                 <EachSlide styling="deaths" title="Deaths:" cases={deaths.current}
                 oldCases={deaths.old} newCases={deaths.new} />

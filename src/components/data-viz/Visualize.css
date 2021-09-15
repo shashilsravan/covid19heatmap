@@ -1,0 +1,72 @@
+.visualize-header{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100vw;
+    background: white;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, .1);
+    z-index: 999;
+}
+.my-container{
+    margin: 1vw;
+}
+.visualize-header ul{
+    display: flex;
+    list-style-type: none;
+}
+.visualize-header ul li{
+    font-size: 14px;
+    margin-right: 20px;
+}
+.visualize-header ul li .title{
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: red !important;
+}
+.m-y5{
+    margin: 80px 0;
+}
+.dropdown{
+    width: 150px;
+    height: 34px;
+    border-color: transparent;
+    background: white;
+    margin: 0 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    outline-width: 0;
+}
+.card{
+    margin-top: 1rem;
+    background: white;
+    padding: 22px 34px;
+}
+.card .card-title{
+    
+}
+.link.selected{
+    color: rgb(121,123,250);
+    font-weight: bold;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex .eachdiv{
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .visualize-header ul li{
+        font-size: 18px;
+        margin-right: 32px;
+    }
+    .my-container{
+        margin: 5vw;
+    }
+}

@@ -10,7 +10,7 @@ export default function SidePanelArenaDisplay({data}) {
         <tr key={data.ID}>
             <td style={tableStyling}>
                 <CountryImage CountryCode={CountryCode} />
-                {Country.length < 12 ? Country : `${Country.substring(0, 11)} ...`}
+                {Country.length < 12 ? Country : `${Country.substring(0, 10)} ...`}
             </td>
             <td>
                 {TotalConfirmed}

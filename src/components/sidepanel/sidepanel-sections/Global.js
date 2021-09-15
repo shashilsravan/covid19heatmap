@@ -1,9 +1,14 @@
+import axios from 'axios'
 import React from 'react'
 import TableRow from '../../../globalComponents/TableRow'
 
 export default function Global({global}) {
     const { TotalConfirmed, TotalRecovered, TotalDeaths, 
     NewConfirmed, NewRecovered, NewDeaths } = global
+    const getData = async () => {
+        const tempRes = await axios('https://api.covid19api.com/summary', )
+    }
+    getData()
     return (
         <div className="text-global">
             {global && (
@@ -18,6 +23,10 @@ export default function Global({global}) {
                     </tbody>
                 </table>
             )}
+            <a href='/news' className='btn btn-ternary'
+                style={{margin: '0 14px'}}> 
+                News </a>
+            <a href='/visualize' className='btn btn-secondary'> Visualize </a>
         </div>
     )
 }

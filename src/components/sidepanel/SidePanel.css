@@ -10,6 +10,28 @@
   padding: 20px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
+.btn-secondary{
+  background: purple !important;
+  color: white !important;
+  text-decoration: none;
+  padding: 8px 50px !important;
+}
+.btn-ternary{
+  background: #F74964 !important;
+  color: white !important;
+  text-decoration: none;
+  padding: 8px 50px !important;
+}
+.btn-ternary:hover{
+  border-color: #F74964 !important;
+  background: transparent !important;
+  color: #F74964 !important;
+}
+.btn-secondary:hover{
+  border-color: purple !important;
+  background: transparent !important;
+  color: purple !important;
+}
 .sidebar.hide {
   display: none;
 }
@@ -44,6 +66,7 @@
 .top-sidebar .displayArea {
   margin: 12px;
   margin-top: 44px;
+  padding-bottom: 20px;
   width: 92%;
   height: auto;
   border: 1px solid black;

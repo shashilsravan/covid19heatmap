@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 html {
-  font-family: system-ui, sans-serif;
+  font-family: 'Bona Nova' !important;
   font-size: 1.25rem;
   background: rgba(254, 175, 88, 0.4);
   /* background: url("https://media2.giphy.com/media/AtK6cr1n21uY8/giphy.gif");
@@ -18,7 +19,6 @@ svg {
 }
 
 .App {
-  font-family: sans-serif;
   text-align: center;
 }
 
@@ -26,4 +26,8 @@ svg {
   html {
     background-size: 100vw 100vh;
   }
+}
+.link{
+  color: black;
+  text-decoration: none;
 }
