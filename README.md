@@ -114,3 +114,8 @@ Project Link: [https://github.com/shashilsravan/covid19heatmap](https://github.c
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/shashil-sravan-a5b201191/
 [screenshot1]: images/screenshot1.png
+[screenshot2]: images/screenshot2.png
+[screenshot3]: images/screenshot3.png
+[screenshot4]: images/screenshot4.png
+[screenshot5]: images/screenshot5.png
+[screenshot6]: images/screenshot6.png
