@@ -25,8 +25,7 @@
 ## First look at the Project
 
 [![Product Name Screen Shot][screenshot1]](https://github.com/shashilsravan/covid19heatmap)
-
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This is how the homepage of the covistats looks like. A more detailed info of the routes and UX can be seen in *Detailed Info* Section
 
 
 ### Built With
