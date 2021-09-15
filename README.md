@@ -4,6 +4,23 @@
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+<p align="center">
+  <h3 align="center">CoviStats</h3>
+
+  <p align="center">
+    An awesome covid19 statistics website with data visualization and latest news
+    <br />
+    <a href="https://github.com/shashilsravan/covid19heatmap"><strong>Explore the project »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://github.com/shashilsravan/covid19heatmap/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/shashilsravan/covid19heatmap/issues">Request Feature</a>
+  </p>
+</p>
+
 
 ### Built With
 
