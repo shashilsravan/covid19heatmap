@@ -5,6 +5,19 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
+### Built With
+
+The application is built with the following libraries/frameworks that you built your project using.
+* [apex-charts](https://apexcharts.com/docs/react-charts/)
+* [d3-scale](https://www.npmjs.com/package/d3-scale)
+* [react-simple-maps](https://www.react-simple-maps.io/)
+* [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+
+APIs used
+* [News API](https://newsapi.org/)
+* [Covid19 API](https://documenter.getpostman.com/view/10808728/SzS8rjbc#27454960-ea1c-4b91-a0b6-0468bb4e6712)
+
+
 ## Getting Started
 
 ### Prerequisites
