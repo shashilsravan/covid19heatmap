@@ -1,29 +1,27 @@
 import axios from 'axios'
 import React, {useState, useEffect} from 'react'
 import './News.css'
+import { data } from './NewsData'
 
 export default function News() {
     const [layout, setLayout] = useState('large')
-    const [mainData, setMainData] = useState([])
     const [loading, setLoading] = useState(true)
     // 
-    const API_KEY = process.env.API_KEY || '34f8ef3527e540efb4e8208012d7da35'
-    console.log(API_KEY);
+    const API_KEY = '34f8ef3527e540efb4e8208012d7da35'
     useEffect(() => {
-       if (mainData.length < 1){
-           fetchData()
-       }
-       else if(mainData.length > 1 && loading){
-           setLoading(false)
-       }
+       setLoading(false)
     }, [])
 
+
     const fetchData = () => {
-        axios.get(`https://newsapi.org/v2/everything?q=Covid19&from=2021-09-01&sortBy=popularity&apiKey=${API_KEY}`).then(res => res.data)
-        .then(data1 => {
-            setMainData(data1.articles);
-            setLoading(false)
-        })
+        // uncomment below code in case of development
+
+        // axios.get(`https://newsapi.org/v2/everything?q=Covid19&from=2021-08-15&apiKey=${API_KEY}`).then(res => res.data)
+        // .then(data1 => {
+        //     console.log(data1);
+        //     setMainData(data1.articles);
+        //     setLoading(false)
+        // })
     }
     
     return (
@@ -85,7 +83,7 @@ export default function News() {
                         </button>
                     </div>
                     <div className='news-cards-container'>
-                        {mainData.map(each => {
+                        {data.articles.map(each => {
                             return (
                             <div className={`news-card ${layout}`} key={each.title}>
                                 <div className='news-card-image'>
