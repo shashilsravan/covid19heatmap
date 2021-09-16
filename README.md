@@ -4,6 +4,31 @@
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+<p align="center">
+  <h1 align="center">CoviStats</h1>
+
+  <p align="center">
+    An awesome covid19 statistics website with data visualization and latest news
+    <br />
+    <a href="https://github.com/shashilsravan/covid19heatmap"><strong>Explore the project »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://github.com/shashilsravan/covid19heatmap/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/shashilsravan/covid19heatmap/issues">Request Feature</a>
+  </p>
+</p>
+
+
+## First look at the Project
+
+[![Product Name Screen Shot][screenshot1]](https://github.com/shashilsravan/covid19heatmap)
+
+
+This is how the homepage of the covistats looks like. A more detailed info of the routes and UX can be seen in *Detailed Info* Section
+
 
 ### Built With
 
@@ -48,9 +73,15 @@ or place this api for testing - ``` 34f8ef3527e540efb4e8208012d7da35 ```
 
 
 ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
+* [![Screenshot2][screenshot2]](https://github.com/shashilsravan/covid19heatmap)
+* [![Screenshot3][screenshot3]](https://github.com/shashilsravan/covid19heatmap)
+ AP vs Karnataka new cases visualization over last 25 days
+ * [![Screenshot4][screenshot4]](https://github.com/shashilsravan/covid19heatmap)
+ Delhi vs Goa new cases visualization over last 25 days
+ * [![Screenshot5][screenshot5]](https://github.com/shashilsravan/covid19heatmap)
+ News related to covid19 (row-view)
+ * [![Screenshot6][screenshot6]](https://github.com/shashilsravan/covid19heatmap)
+ News related to covid19 (3 x 3 grid-view)
 
 
 
@@ -88,4 +119,9 @@ Project Link: [https://github.com/shashilsravan/covid19heatmap](https://github.c
 [license-url]: https://github.com/shashilsravan/covid19heatmap
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/shashil-sravan-a5b201191/
-[product-screenshot]: images/screenshot1.png
+[screenshot1]: images/screenshot1.png
+[screenshot2]: images/screenshot2.png
+[screenshot3]: images/screenshot3.png
+[screenshot4]: images/screenshot4.png
+[screenshot5]: images/screenshot5.png
+[screenshot6]: images/screenshot6.png
