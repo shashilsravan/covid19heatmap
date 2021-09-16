@@ -12,7 +12,9 @@ html {
 body {
   margin: 0;
 }
-
+.WorldMap svg{
+  width: 100vw;
+}
 svg {
   display: inline-block;
   vertical-align: middle;
