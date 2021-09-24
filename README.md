@@ -13,7 +13,7 @@
     <a href="https://github.com/shashilsravan/covid19heatmap"><strong>Explore the project »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://covid-b7d89.web.app/">View Demo</a>
     ·
     <a href="https://github.com/shashilsravan/covid19heatmap/issues">Report Bug</a>
     ·
